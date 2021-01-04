@@ -7,7 +7,7 @@
 #define LED3 23 // GPIO 23
 #define LED4 24 // GPIO 24
 
-int getch(void)
+int getch(void) // 키보드 입력을 char 단위로 받는 함수.
 {
 
 	int ch;
@@ -28,7 +28,7 @@ int getch(void)
 int main(void){
 
 	int ch;
-	if(wiringPiSetupGpio() == -1)
+	if(wiringPiSetupGpio() == -1) 
 		return -1;
 
 	pinMode(LED1, OUTPUT);
